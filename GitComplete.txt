@@ -1,0 +1,77 @@
+--- dummy text and documents filler ---
+bitly.com/git-start-web
+meettheipsums.com
+hipsum.co
+www.initializr.com
+bit.ly/git-start-web
+
+--- common linux command ---
+ls
+ls -al
+cd
+mkdir
+mkdir -p level1/level2/level3
+pwd
+clear
+"Test Git Quick Start demo" >> start.txt
+cat start.txt
+bashrc
+alias npp='notepad++.exe -multiInst -nosession'
+npp .gitconfig
+
+rm -rf foldername/
+
+unzip ~/Downloads/zipfilename.zip
+mv initializr web-project
+
+Mac OS : Text Mate - Terminal - Install shell support
+mate .bashrc
+export EDITOR='/usr/local/bin/mate -w'
+mate .gitconfig
+
+--- common git command ---
+git version
+git config --global user.name "Karin Chang"
+git config --global user.email "karin411@connect.hku.hk"
+git config --global --list
+git clone https://github.com/aliveline/github-demo.git
+git status
+git add start.txt
+git commit -m "Adding start text file"
+git push 
+
+git config --global core.editor "notepad++.exe multiInst -nosession" // for Windows
+git config --global core.editor "mate -w" // for Mac
+
+git config --global --list
+
+git init fresh-project
+git commit
+
+git init
+git add. 
+git commit -m "My first commit, inline"
+rm -rf .git
+
+git pull origin master
+git push origin master
+
+git commit -am "Adding more ipsum text"
+
+
+git ls-files
+
+git reset HEAD level1-file.txt // discard staged changes
+git checkout -- level1-file.txt // discard all changes in working directory and restore to last committed version
+
+git mv level3-file.txt level3.txt // staged rename
+mv level2-file.txt level2.txt
+git add -A // put rename on stage
+git mv level3.txt level3-file.txt // staged rename reverse
+git mv level2.txt level3 // staged file movement
+mv level2.txt .. 
+git add -A // put file movement on stage
+
+mv level1-file.txt level1.txt
+git add level1.txt
+git add -u // rename instead of adding a new file
